@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_green"
+    android:orientation="vertical"
+    tools:context=".challenge.ChallengeActivity">
+    <ProgressBar
+        android:id="@+id/gameProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100" /><!--set 100 maximum value for the progress bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+        <TextView
+            android:id="@+id/chal_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="No Grace"
+            android:fontFamily="@font/dmsans_font"
+            android:layout_weight="4"
+            android:textColor="@color/medium_sea_green"
+            android:textSize="20dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/ic_coin"
+            />
+        <TextView
+            android:id="@+id/moneyInBank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/dmsans_font"
+            android:text="2000"
+            android:layout_weight="1"
+            android:textColor="@color/medium_sea_green"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/happilvlSV"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/happilvlRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/imageChal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/kidnap" />
+    <ScrollView
+        android:id="@+id/storySV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:id="@+id/assistLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startEndBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/sm_button_border"
+        android:textColor="@color/medium_sea_green"
+        android:fontFamily="@font/dmsans_font"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:text="CONTINUE" />
+    <LinearLayout
+        android:id="@+id/gameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <EditText
+            android:id="@+id/editTextAction"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/dmsans_font_thin"
+            android:paddingBottom="10dp"
+            android:hint="Custom Action" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sm_button_border"
+            android:textColor="@color/medium_sea_green"
+            android:fontFamily="@font/dmsans_font"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="16dp"
+            android:text="SEND" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

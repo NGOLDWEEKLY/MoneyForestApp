@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Money Forest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="challenge">Challenge</string>
+    <string name="recommended">Recommended for you</string>
+    <string name="popular">Popular Challenges</string>
+
+    <string name="facebook_app_id">319947497057333</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+    <string name="google_ads_inter_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="quote">"Be Fearful When Others Are Greedy\n And Greedy When Others Are Fearful"\n- Warren Buffet</string>
+    <string name="notification">Notification</string>
+</resources>

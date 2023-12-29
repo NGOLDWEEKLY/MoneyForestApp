@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/course_content"
+    tools:context=".course.CourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/medium_sea_green"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/courseBackBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            android:layout_gravity="center"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+        <TextView
+            android:id="@+id/section_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_font"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/course_content_wv"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_ll"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:text="Next" />
+
+    </LinearLayout>
+</LinearLayout>

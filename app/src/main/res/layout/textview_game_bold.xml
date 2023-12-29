@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textColor="@color/dark_gray"
+    android:fontFamily="@font/dmsans_font"
+    android:textSize="16dp"
+    android:text="Custom Text View" />

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/medium_sea_green"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/course_chapter"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingTop="10dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/dmsans_font"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/course_chapter_complete"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:tint="@color/white"
+        android:padding="10dp"
+
+        android:src="@drawable/ic_baseline_check_circle_24"
+        />
+    <ImageView
+        android:id="@+id/course_chapter_onGoing"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:tint="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_start_east_24"
+        />
+
+
+</LinearLayout>

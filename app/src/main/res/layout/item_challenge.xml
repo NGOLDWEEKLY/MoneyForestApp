@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/m_button_border"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageChal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/kidnap" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="10"
+        android:textSize="18sp"
+        android:text="Title"
+        android:textColor="@color/medium_sea_green"
+        android:fontFamily="@font/dmsans_font"
+/>
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:textColor="@color/medium_sea_green"
+        android:text="Desc"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="3"
+            android:textColor="@color/medium_sea_green"
+            android:fontFamily="@font/dmsans_font"
+            android:background="@drawable/sm_button_border"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/redoBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/medium_sea_green"
+            android:background="@color/pale_green"
+            android:tint="@color/medium_sea_green"
+            android:src="@drawable/ic_baseline_refresh_24"
+            />
+    </LinearLayout>
+
+</LinearLayout>
